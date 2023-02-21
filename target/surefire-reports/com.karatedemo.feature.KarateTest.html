@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>com.karatedemo.feature.KarateTest</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">4</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2023-02-21 03:22:32 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:7]">[1:7] Get all persons </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:15]">[2:15] Get Single Person </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3:29]">[3:29] Create a New Person </a>
+</div>
+<div class="nav-item passed">
+<a href="#[4:47]">[4:47] Delete an existing Person </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">com/karatedemo/feature/KarateTest.feature</span><span class="feature-description">Verify Persons</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:7]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">debug</a>
+</div>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Get all persons </span>
+</div>
+<div class="scenario-time passed">ms: 1569</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:7]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:7]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">Given url 'https://karate-testsuite-mock.free.beeceptor.com'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="1">15:22:26.414 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given path '/api/users'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">1555</div>
+</div>
+<div class="preformatted" data-parent="3">15:22:26.694 request:
+1 &gt; GET https://karate-testsuite-mock.free.beeceptor.com/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: karate-testsuite-mock.free.beeceptor.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+
+15:22:28.014 response time in milliseconds: 1315.03
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Alt-Svc: h3=":443"; ma=2592000
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 21 Feb 2023 09:52:27 GMT
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+{
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Then match response == { data:'#array', support: '##object'}</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">Then match response.data[*] contains {id:'#number? _ &gt; 0', email:'#regex .+@reqres.in', first_name:'#string', last_name:'#string', avatar: '#string'}</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:15]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">debug</a>
+</div>
+<span class="scenario-keyword">Scenario: [2:15]</span><span class="scenario-name">Get Single Person </span>
+</div>
+<div class="scenario-time passed">ms: 1200</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:15]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:15]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-cell passed">Given url 'https://karate-testsuite-mock.free.beeceptor.com'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="7">15:22:28.039 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">Given path '/api/users/4'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">1179</div>
+</div>
+<div class="preformatted" data-parent="9">15:22:28.043 request:
+1 &gt; GET https://karate-testsuite-mock.free.beeceptor.com/api/users/4
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: karate-testsuite-mock.free.beeceptor.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+
+15:22:29.221 response time in milliseconds: 1175.18
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Alt-Svc: h3=":443"; ma=2592000
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 21 Feb 2023 09:52:29 GMT
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+{
+        "id": 4,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg",
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment"># use def keyword to the variable</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">* def id = response.id</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Then match id == 4</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment"># contains example</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Then match response contains {"first_name": "Janet"}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">Then match response.first_name ==  'Janet'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Then match response.last_name !=  'Weavered'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3:29]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">debug</a>
+</div>
+<span class="scenario-keyword">Scenario: [3:29]</span><span class="scenario-name">Create a New Person </span>
+</div>
+<div class="scenario-time passed">ms: 2327</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3:29]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3:29]bg">
+<div class="step-container" id="16">
+<div class="step-ref bg-step">16</div>
+<div class="step-cell passed">Given url 'https://karate-testsuite-mock.free.beeceptor.com'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="16">15:22:29.247 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Given path '/api/createuser'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="18">{
+    	"name": "CTS",
+    	"job": "India"
+	  }</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">1099</div>
+</div>
+<div class="preformatted" data-parent="19">15:22:29.257 request:
+1 &gt; POST https://karate-testsuite-mock.free.beeceptor.com/api/createuser
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 28
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: karate-testsuite-mock.free.beeceptor.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+{"name":"CTS","job":"India"}
+
+15:22:30.350 response time in milliseconds: 1090.55
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Alt-Svc: h3=":443"; ma=2592000
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 21 Feb 2023 09:52:30 GMT
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+{
+    "first_name": "Cognizant",
+"last_name": "Hyderabad",
+    "job": "leader",
+    "id": "86",
+    "createdAt": "2023-02-21T09:36:23.218Z",
+"status": "created"
+}</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">* def personId = response.id</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">Given path 'api/users/'+personId</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">1216</div>
+</div>
+<div class="preformatted" data-parent="23">15:22:30.361 request:
+2 &gt; GET https://karate-testsuite-mock.free.beeceptor.com/api/users/86
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: karate-testsuite-mock.free.beeceptor.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+
+15:22:31.576 response time in milliseconds: 1212.25
+2 &lt; 200
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Alt-Svc: h3=":443"; ma=2592000
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 21 Feb 2023 09:52:31 GMT
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Accept-Encoding
+{
+        "id": 86,
+        "email": "cognizant.hyd@mocking.in",
+        "first_name": "Cognizant",
+        "last_name": "Hyderabad",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg",
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[4:47]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">debug</a>
+</div>
+<span class="scenario-keyword">Scenario: [4:47]</span><span class="scenario-name">Delete an existing Person </span>
+</div>
+<div class="scenario-time passed">ms: 1225</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[4:47]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[4:47]bg">
+<div class="step-container" id="25">
+<div class="step-ref bg-step">25</div>
+<div class="step-cell passed">Given url 'https://karate-testsuite-mock.free.beeceptor.com'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="25">15:22:31.588 karate.env system property was:</div>
+<div class="step-row">
+<div class="step-container" id="26">
+<div class="step-ref passed">26</div>
+<div class="step-cell passed">Given path '/api/dropuser'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="27">
+<div class="step-ref passed">27</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="27">{
+    	"id": "11"
+	  }</div>
+<div class="step-row">
+<div class="step-container" id="28">
+<div class="step-ref passed">28</div>
+<div class="step-cell passed">When method DELETE</div>
+</div>
+<div class="time-cell passed">1217</div>
+</div>
+<div class="preformatted" data-parent="28">15:22:31.593 request:
+1 &gt; DELETE https://karate-testsuite-mock.free.beeceptor.com/api/dropuser
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 11
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: karate-testsuite-mock.free.beeceptor.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+{"id":"11"}
+
+15:22:32.808 response time in milliseconds: 1210.91
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Alt-Svc: h3=":443"; ma=2592000
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 21 Feb 2023 09:52:32 GMT
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+{ "status": "User Dropped"}</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-cell passed">Then match response.status ==  'User Dropped'</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
